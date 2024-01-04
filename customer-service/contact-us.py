@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="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",
+    api_key="YOUR_KEY",
 )
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
