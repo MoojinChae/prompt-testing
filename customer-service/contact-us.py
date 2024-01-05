@@ -1,7 +1,11 @@
 from openai import OpenAI
+import os
+from dotenv import load_dotenv, find_dotenv
+
+_ = load_dotenv(find_dotenv())
 
 client = OpenAI(
-    api_key="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",
+    api_key=os.getenv('OPENAI_API_KEY'),
 )
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
