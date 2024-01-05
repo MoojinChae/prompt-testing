@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="YOUR_KEY",
+    api_key="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",
 )
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
@@ -37,9 +37,9 @@ created_at: <chat creation time>
 prompt = f"""
 I am running {field} business and I would like to get a fake customer service chat conversation \
 to do quality assurance. Here are few requirements that I have for you.
-1. Cover many cases as much as possible.
+1. Cover many possible cases as much as possible.
 2. 10% of customers are really upset due to the issue they have.
-3. 30% of issues is not resolved the issue during coversasion which will create a issue ticket to follow up.
+3. 30% of issues is not resolved during coversasion. In this case, a issue ticket will be created to follow up.
 {output_format}
 """
 print("====prompt====")
